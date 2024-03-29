@@ -1,16 +1,16 @@
 $EmailFrom = “dharmpal.singh33261@outlook.com”
 
-$EmailTo = “dharmpals47@gmail.com”
+   $EmailTo = “dharmpals47@gmail.com”
 
-$Subject = “Test”
+   $Subject = “Alert : Disk utilization Notification”
 
-$Body = “Tricknology Test”
+    $Body = "kindly check your disk"
 
-$SMTPServer = “smtp.outlook.com”
+    $SMTPServer = “smtp.outlook.com”
 
-$SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
+    $SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 
-$SMTPClient.EnableSsl = $true
+    $SMTPClient.EnableSsl = $true
 
-$SMTPClient.Credentials = New-Object System.Net.NetworkCredential(“dharmpal.singh33261@outlook.com”, “@@@@@@@@”);
-$SMTPClient.Send($EmailFrom, $EmailTo, $Subject, $Body)
+    $SMTPClient.Credentials = New-Object System.Net.NetworkCredential(“dharmpal.singh33261@outlook.com”, “XXXXX”);
+    $SMTPClient.Send($EmailFrom, $EmailTo, $Subject, $Body)
