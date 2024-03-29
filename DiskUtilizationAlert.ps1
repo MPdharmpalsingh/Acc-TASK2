@@ -29,7 +29,7 @@ foreach ($disk in $diskInfo) {
 
     $SMTPClient.EnableSsl = $true
 
-    $SMTPClient.Credentials = New-Object System.Net.NetworkCredential(“dharmpal.singh33261@outlook.com”, “Ballia@123”);
+    $SMTPClient.Credentials = New-Object System.Net.NetworkCredential(“dharmpal.singh33261@outlook.com”, “XXXXXX”);
     $SMTPClient.Send($EmailFrom, $EmailTo, $Subject, $Body)
 
     start-sleep -Seconds 10
